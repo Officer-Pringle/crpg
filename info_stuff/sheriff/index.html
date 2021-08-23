@@ -3,13 +3,14 @@
 <head>
 
 <style>
-.soptext h1 {
+.Headertext h1 {
   margin: 0;
   position: absolute;
   top: 70px;
   left:50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 .cudtext h1 { /* Commonly used Links */
@@ -21,6 +22,8 @@
   transform: translate(-50%, -50%);
   color: white;
 }
+
+/* ------------------------ BUTTONS ---------------------------------------------*/
 .button {
   border: none;
   color: white;
@@ -32,11 +35,11 @@
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  height:10vh;
-  width:20vw;
+  height:8vh;
+  width:50vw;
   position: absolute;
-  top: 120px;
-  left: 2%;
+  top: 20vh;
+  left: 25%;
 }
 .buttonb {
   border: none;
@@ -55,7 +58,7 @@
   top: 120px;
   left: 25%;
 }
-.hwaybutt {
+.hwaybutt { /* Highway button */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -72,7 +75,7 @@
   top: 120px;
   left: 50%;
 }
-.firebutt {
+.firebutt { /* Fire Button */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -89,24 +92,8 @@
   top: 120px;
   left: 75%;
 }
-.penalbutt {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  height:10vh;
-  width:20vw;
-  position: absolute;
-  top: 270px;
-  left: 2%;
-}
-.callbutt {
+
+.callbutt { /* Callout Button */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -123,7 +110,7 @@
   top: 270px;
   left: 25%;
 }
-.sensbutt {
+.sensbutt { /* Unused Button */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -140,7 +127,7 @@
   top: 270px;
   left: 50%;
 }
-.livemapbutton {
+.livemapbutton {  /* Live Map Button*/
   border: none;
   color: white;
   padding: 16px 32px;
@@ -159,19 +146,19 @@
 }
 
 
-
+/*-------------------------------------------------------------------------------------------------*/
 .depbutt {
-  background-color: grey; 
+  background-color: rgba(22, 22, 22, 0.459); 
   color: white; 
   border: 2px solid grey;
 }
 
 .depbutt:hover {
-  background-color: powderblue;
-  color: Black;
+  background-color: rgb(150, 8, 8);
+  color: rgb(229, 255, 0);
 }
 
-
+/*-------------------------------------------------------------------------------------------------*/
 .combutt {
   background-color: grey; 
   color: white; 
@@ -194,7 +181,7 @@
   color: Black;
 }
 
-
+/*-------------------------------------------------------------------------------------------------*/
 .livemapbutt {
   background-color: rgb(0, 110, 255); 
   color: white; 
@@ -206,26 +193,41 @@
   color: Black;
 }
 
+/* ----------------------- BACKGROUND ASSETS ------------------------------------------*/
 .backgroundimg {
-  background-image: url('http://www.centralroleplaygaming.com/assets/unknown%20(1).png');
+  background-image: url('https://www.centralroleplaygaming.com/assets/img/sheriff_back.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
 .greyboxing { /* Background Box */
-  height: 55%;
-  width: 99%;
+  height: 95vh;
+  width: 99vw;
   position: absolute;
   opacity: 0.8;
   background-color: rgb(61, 61, 61);
+}
+.lineBreak { /* Line Break under Text */
+  height: 1%;
+  width: 99%;
+  top: 16vh;
+  position: absolute;
+  opacity: 0.8;
+  background-color: rgb(255, 187, 0);
 }
 
 .logo_sticky {
   position: sticky;
   top: 0;
-  left:100%;
-  width: 200px;
+  left:160vh;
+  width: 10vw;
+}
+.logo_sticky2 {
+  position: sticky;
+  top: 0;
+  right:160vh;
+  width: 10vw;
 }
 
 </style>
@@ -233,35 +235,24 @@
 <body class="backgroundimg"> <!-- Ovs Background Image -->
   
   <div class="greyboxing"></div>  <!--Background Box-->
-  <img class="logo_sticky" src="http://www.centralroleplaygaming.com/assets/new_icon_v2.png" alt="logo"> <!-- Floating Logo-->
+  <div class="lineBreak"></div> <!--Line Break-->
+  <img class="logo_sticky" src="http://www.centralroleplaygaming.com/assets/img/slcso_patch.png" alt="logo"> <!-- Floating Logo-->
+  <img class="logo_sticky2" src="http://www.centralroleplaygaming.com/assets/img/slcso_patch.png" alt="logo"> <!-- Floating Logo2-->
   
-  <div class="soptext" ; text-decoration-color: white;>
-    <h1>Departmental Documents</h1>
+  <div class="Headertext" ; text-decoration-color: white;>
+    <h1>SHERIFF DOCUMENTS</h1>
   </div>
-  <button id="sheriffbutton" class="button depbutt" target="_blank" >Sheriff SOP</button>
-  <button id="citysopbutton" class="buttonb depbutt">City SOP</button>
-  <button id="hwaysopbutton" class="hwaybutt depbutt">Highway SOP</button>
-  <button id="firesopbutton" class="firebutt depbutt">Fire/EMS SOP</button>
-  
-  <div class="cudtext" ; text-decoration-color: white;>
-    <h1>Commonly Used Links</h1>
-  </div>
-  
-  <button id="penalbutton" class="penalbutt combutt" target="_blank" >Penal Codes</button>
-  <button id="callsbutton" class="callbutt combutt" target="_blank" >Phonetics / 10 Codes</button>
-  <button id="sensbutton" class="sensbutt scombutt" target="_blank" >UNUSED BUTTON</button>
-  <button id="livemapbutton" class="livemapbutton livemapbutt" target="_blank" > Live Map</button>
+  <button id="SSOP" class="button depbutt" target="_blank" >STANDARD OPERATING PROCEDURES</button>
+  <!--<button id="citysopbutton" class="buttonb depbutt">City SOP</button>-->
+  <!--<button id="hwaysopbutton" class="hwaybutt depbutt">Highway SOP</button>-->
+  <!--<button id="firesopbutton" class="firebutt depbutt">Fire/EMS SOP</button>-->
   
 
 <script type="text/javascript">
-    document.getElementById("sheriffbutton").onclick = function () { location.href = "sheriff/index.html";};
+    document.getElementById("sheriffbutton").onclick = function () { location.href = "index.html";};
     document.getElementById("citysopbutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/citysop.html";};
-    document.getElementById("hwaysopbutton").onclick = function () { location.href = "https://www.yahoo.com";};
-    document.getElementById("firesopbutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/fire/firesop.html";};
-    document.getElementById("penalbutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/penal.html";};
-    document.getElementById("callsbutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/callouts.html";};
-    document.getElementById("livemapbutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/livemap/";};
     document.getElementById("sensbutton").onclick = function () { location.href = "https://www.youtube.com/watch?v=oHg5SJYRHA0&feature=youtu.be";};
 </script>
+
 </body>
 </html>
