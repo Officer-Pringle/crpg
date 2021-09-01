@@ -70,7 +70,6 @@
   display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
-  border-radius: 10px;
   transition-duration: 0.4s;
   cursor: pointer;
   height:5vh;
@@ -83,8 +82,8 @@
 
 /*-------------------------------------------------------------------------------------------------*/
 .depbutt {
-  background-color: rgba(22, 22, 22, 0.459); 
-  color: white; 
+  background-color: rgba(22, 22, 22, 0.8); 
+  color: rgb(255, 0, 0); 
   border: 2px solid grey;
 }
 
@@ -108,7 +107,7 @@
 
 /* ----------------------- BACKGROUND ASSETS ------------------------------------------*/
 .backgroundimg {
-  background-image: url('https://www.centralroleplaygaming.com/assets/img/sheriff_back.jpg');
+  background-image: url('https://www.centralroleplaygaming.com/assets/img/fireotherback.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -118,7 +117,7 @@
   height: 95vh;
   width: 99vw;
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.4;
   background-color: rgb(61, 61, 61);
 }
 .lineBreak { /* Line Break under Text */
@@ -127,13 +126,13 @@
   top: 16vh;
   position: absolute;
   opacity: 0.8;
-  background-color: rgb(255, 187, 0);
+  background-color: rgb(194, 44, 44);
 }
 
 .logo_sticky {
-  margin: 0;
+  margin: 10;
   position: sticky;
-  top: 0;
+  top: 20vh;
   left:160vh;
   width: 10vw;
 }
@@ -150,21 +149,21 @@
   
   <div class="greyboxing"></div>  <!--Background Box-->
   <div class="lineBreak"></div> <!--Line Break-->
-  <img class="logo_sticky" src="http://www.centralroleplaygaming.com/assets/img/slcso_patch.png" alt="logo"> <!-- Floating Logo-->
-  <img class="logo_sticky2" src="http://www.centralroleplaygaming.com/assets/img/slcso_patch.png" alt="logo"> <!-- Floating Logo2-->
+  <img class="logo_sticky" src="http://www.centralroleplaygaming.com/assets/img/firebadge.png" alt="logo"> <!-- Floating Logo-->
+  <img class="logo_sticky2" src="http://www.centralroleplaygaming.com/assets/img/firebadge.png" alt="logo2"> <!-- Floating Logo2-->
   
   <div class="Headertext" ; text-decoration-color: white;>
-    <h1>SHERIFF DOCUMENTS</h1>
+    <h1>FIRE/EMS DOCUMENTS</h1>
   </div>
   <button id="SSOP" class="button depbutt" target="_blank" >STANDARD OPERATING PROCEDURES</button>
-  <button id="roster" class="buttonb depbutt">SHERIFF ROSTER</button>
+  <button id="roster" class="buttonb depbutt">ROSTER</button>
   <button id="return" class="backbutt backbutt">Go Back</button>
   <!--<button id="firesopbutton" class="firebutt depbutt">Fire/EMS SOP</button>-->
   
 
 <script type="text/javascript">
-    document.getElementById("SSOP").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/sheriff/sheriffsop.html";};
-    document.getElementById("roster").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/sheriff/sheriffros.html";};
+    document.getElementById("SSOP").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/fire/firesop.html";};
+    document.getElementById("roster").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/fire/fireroster.html";};
     document.getElementById("return").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/index.html";};
 </script>
 

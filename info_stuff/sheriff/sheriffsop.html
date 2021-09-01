@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html>
+<style>
+.backbutt { /* Back button */
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  height:5vh;
+  width:12vw;
+  position: absolute;
+  bottom: 5vh;
+  left: 2vw;
+}
+.backbutt {
+  background-color: rgb(39, 73, 226); 
+  color: white; 
+  border: 2px solid grey;
+}
 
-<body style="background-color:black;">
-  
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQgBd_f5ox_P579PNuUyREV1mSaMhPUN4CCmGsinJcWBF9RFgbar9qj7QL4nP5YzCXkFJFTt1KGK9FN/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
-  style="height:96vh;width:98vw;" ></iframe>
-  
+.backbutt:hover {
+  background-color: rgb(0, 153, 255);
+  color: Black;
+}
+
+.backgroundimg {
+  background-image: url('https://www.centralroleplaygaming.com/assets/img/sheriff2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<body class="backgroundimg">
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vRngAcEHGUKQoNxC4z1jvFkyta7Ju_VfQFsHib6OY0YlMsemrIb2RAN7LwY93HmSW7OgDQ7YDAhGAqk/pub?embedded=true"
+  style="height:96vh;width:50vw;position:absolute;padding-left: 25vw;" ></iframe>
+  <button id="return" class="backbutt backbutt">Go Back</button>
+<script type="text/javascript">
+    document.getElementById("return").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/sheriff/index.html";};
+</script>
+
 </body>
 
 </html>

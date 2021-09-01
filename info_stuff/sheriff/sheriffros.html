@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html>
+<style>
+.backbutt { /* Back button */
+  border: none;
+  color: white;
+  padding: 2px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  cursor: pointer;
+  height:4vh;
+  width:12vw;
+  position: absolute;
+  top: 0.5vh;
+  right: 5vw;
+}
+.backbutt {
+  background-color: rgb(0, 0, 0); 
+  color: rgb(255, 0, 0); 
+  border: 2px solid grey;
+}
+
+.backbutt:hover {
+  background-color: rgb(0, 132, 255);
+  color: Black;
+}
+</style>
 
 <body style="background-color:black;">
-  
+  <button id="return" class="backbutt backbutt">GO BACK</button>
   <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQgBd_f5ox_P579PNuUyREV1mSaMhPUN4CCmGsinJcWBF9RFgbar9qj7QL4nP5YzCXkFJFTt1KGK9FN/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
   style="height:96vh;width:98vw;" ></iframe>
-  
+  <script type="text/javascript">
+    document.getElementById("return").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/sheriff/index.html";};
+  </script>
 </body>
 
 </html>

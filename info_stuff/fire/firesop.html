@@ -1,70 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Fire SOP</title>
-    <link rel="shortcut icon" type="img/png" href="img/favicon.png">
-    
 <style>
-.right {
-  float: top;
-  width: 97vw;
-  height: 10vh;
-  border: 3px solid rgb(0, 0, 255);
-  padding: 5px;
-  background: rgba(220,220,220, 0.8);
-}
-.right h1 {
-  margin: 0;
+.backbutt { /* Back button */
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  height:5vh;
+  width:12vw;
   position: absolute;
-  top: 45px;
-  left: 25%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  bottom: 5vh;
+  left: 2vw;
 }
-.mid p {
-  margin: 0;
-  position: absolute;
-  top: 50px;
-  left:100%;
-  width:800px;
-  -ms-transform: translate(-100%, -100%);
-  transform: translate(-100%, -100%);
-  color: red;
-  font-size: 200%;
+.backbutt {
+  background-color: rgb(160, 4, 4); 
+  color: rgb(255, 255, 255); 
+  border: 2px solid grey;
 }
-.mid2 p {
-  margin: 0;
-  position: absolute;
-  top: 120px;
-  left:80%;
-  width:500px;
-  -ms-transform: translate(-100%, -100%);
-  transform: translate(-100%, -100%);
-  color: green;
-  font-size: 150%;
+
+.backbutt:hover {
+  background-color: rgb(0, 153, 255);
+  color: Black;
 }
-.left h1 {
-  margin: 0;
-  position: absolute;
-  top: 100px;
-  right: 10%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.theimg {
-  position: absolute;
-  height: 10vh;
-  width: 40vw;
-  bottom:2%;
-  right: 5%;
+
+.backgroundimg {
+  background-image: url('http://www.centralroleplaygaming.com/assets/img/firemain.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 </style>
-</head>
-<body style="background-color: rgb(0,0,0);">
+<body class="backgroundimg">
 
-  <iframe src="https://docs.google.com/document/d/e/2PACX-1vR02Qb083QA0UQsbsvua34rOXcuDIu2QbrroduMpyn8bqdE3nTkGkOVah3mC8FyaRWe0-ir6cHWbhON/pub?embedded=true"
-  style="height:95vh;width:50vw;top: 500px;" ></iframe>
-  
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vR02Qb083QA0UQsbsvua34rOXcuDIu2QbrroduMpyn8bqdE3nTkGkOVah3mC8FyaRWe0-ir6cHWbhON/pub?embedded=true"
+  style="height:96vh;width:50vw;position:absolute;padding-left: 25vw;" ></iframe>
+  <button id="return" class="backbutt backbutt">Go Back</button>
+<script type="text/javascript">
+    document.getElementById("return").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/fire/index.html";};
+</script>
+
 </body>
+
 </html>

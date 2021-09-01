@@ -6,8 +6,17 @@
 .soptext h1 {
   margin: 0;
   position: absolute;
-  top: 70px;
-  left:50%;
+  top: 23vh;
+  left:24vw;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.soptext2 h1 {
+  margin: 0;
+  position: absolute;
+  top: 23vh;
+  right:10vw;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: white;
@@ -34,10 +43,10 @@
   transition-duration: 0.4s;
   cursor: pointer;
   height:6vh;
-  width:50vw;
+  width:35vw;
   position: absolute;
-  top: 15vh;
-  left: 25vw;
+  top: 28vh;
+  left: 7vw;
 }
 .buttonb {
   border: none;
@@ -52,27 +61,28 @@
   border-radius: 10px;
   cursor: pointer;
   height:6vh;
-  width:50vw;
+  width:35vw;
   position: absolute;
-  top: 25vh;
-  left: 25vw;
+  top: 37vh;
+  left: 7vw;
 }
 .hwaybutt {
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 10px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   transition-duration: 0.4s;
+  border-radius: 10px;
   cursor: pointer;
-  height:10vh;
-  width:20vw;
+  height:6vh;
+  width:35vw;
   position: absolute;
-  top: 120px;
-  left: 50%;
+  top: 55vh;
+  left: 7vw;
 }
 .firebutt {
   border: none;
@@ -87,10 +97,10 @@
   border-radius: 10px;
   cursor: pointer;
   height:6vh;
-  width:50vw;
+  width:35vw;
   position: absolute;
-  top: 35vh;
-  left: 25vw;
+  top: 46vh;
+  left: 7vw;
 }
 .penalbutt {
   border: none;
@@ -126,52 +136,67 @@
   top: 270px;
   left: 25%;
 }
-.sensbutt {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  height:10vh;
-  width:20vw;
-  position: absolute;
-  top: 270px;
-  left: 50%;
-}
-.livemapbutton {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  height:10vh;
-  width:20vw;
-  position: absolute;
-  top: 270px;
-  left: 75%;
+
+/* BUTTON AND BUTTON HOVERS*/
+
+/*SHERIFF BUTTONS*/
+.sheriffbutt {
+  background-color: rgb(248, 151, 29); 
+  color: rgb(0, 0, 0); 
+  border: 2px solid grey;
 }
 
+.sheriffbutt:hover {
+  background-color: rgb(53, 53, 53);
+  color: rgb(255, 255, 255);
+}
 
+/*CITY BUTTONS*/
+.citybutt {
+  background-color: rgb(0, 55, 255); 
+  color: rgb(255, 255, 255); 
+  border: 2px solid grey;
+}
 
-.depbutt {
-  background-color: grey; 
+.citybutt:hover {
+  background-color: rgb(53, 53, 53);
+  color: rgb(255, 255, 255);
+}
+
+/*Fire BUTTONS*/
+.firebutton {
+  background-color: rgb(170, 5, 5); 
   color: white; 
   border: 2px solid grey;
 }
 
-.depbutt:hover {
-  background-color: powderblue;
-  color: Black;
+.firebutton:hover {
+  background-color: rgb(53, 53, 53);
+  color: rgb(255, 255, 255);
+}
+
+/*Fire BUTTONS*/
+.firebutton {
+  background-color: rgb(170, 5, 5); 
+  color: white; 
+  border: 2px solid grey;
+}
+
+.firebutton:hover {
+  background-color: rgb(53, 53, 53);
+  color: rgb(255, 255, 255);
+}
+
+/*unused button*/
+.hwaybutton {
+  background-color: rgba(22, 22, 22, 0.459); 
+  color: white; 
+  border: 2px solid grey;
+}
+
+.hwaybutton:hover {
+  background-color: rgb(53, 101, 233);
+  color: rgb(0, 0, 0);
 }
 
 
@@ -186,28 +211,8 @@
   color: Black;
 }
 
-/* Scenario Buttons Shit*/
-.scombutt {
-  background-color: rgb(94, 5, 5); 
-  color: white; 
-  border: 2px solid grey;
-}
-.scombutt:hover {
-  background-color: rgb(255, 0, 21);
-  color: Black;
-}
 
-
-.livemapbutt {
-  background-color: rgb(0, 110, 255); 
-  color: white; 
-  border: 2px solid  rgb(0, 110, 255);
-}
-
-.livemapbutt:hover {
-  background-color: white;
-  color: Black;
-}
+/* BACKGROUND ASSETS*/
 
 .backgroundimg {
   background-image: url('http://www.centralroleplaygaming.com/assets/img/mainback.png');
@@ -217,38 +222,51 @@
 }
 
 .greyboxing { /* Background Box */
-  height: 55%;
-  width: 99%;
+  height: 40vh;
+  width: 45vw;
   position: absolute;
   opacity: 0.5;
+  top: 25vh;
+  left: 2vw;
   background-color: rgb(88, 88, 88);
 }
-
+.greyboxing2 { /* Background Box */
+  height: 40vh;
+  width: 45vw;
+  position: absolute;
+  opacity: 0.5;
+  top: 25vh;
+  right: 2vw;
+  background-color: rgb(88, 88, 88);
+}
 .logo_sticky {
-  position: sticky;
-  top: 0;
-  left:100%;
-  width: 200px;
+  position: absolute;
+  left: 37vw;
+  width: 28vw;
+  height: 12vh;
+  top: 5vh
 }
 
 </style>
 </head>
 <body class="backgroundimg"> <!-- Ovs Background Image -->
   
+  <img class="logo_sticky" src="http://assets.centralroleplaygaming.com/crpg_welcome_white_clear.png" alt="logo"> <!-- Floating Logo-->
   <div class="greyboxing"></div>  <!--Background Box-->
-  <img class="logo_sticky" src="http://www.centralroleplaygaming.com/assets/new_icon_v2.png" alt="logo"> <!-- Floating Logo-->
+  <div class="greyboxing2"></div>  <!--Background Box-->
+  
   
   <div class="soptext" ; text-decoration-color: white;>
     <h1>DEPARTMENTS</h1>
   </div>
-  <button id="sheriffbutton" class="button depbutt" target="_blank" >SHERIFFS DEPARTMENT</button>
-  <button id="citysopbutton" class="buttonb depbutt">LOS SANTOS POLICE</button>
-  <button id="firebutton" class="firebutt depbutt">FIRE AND EMS</button>
-  <!--<button id="hwaysopbutton" class="hwaybutt depbutt">UNUSED</button>
-  <div class="cudtext" ; text-decoration-color: white;>
-    <h1>Commonly Used Links</h1>
+  <div class="soptext2" ; text-decoration-color: white;>
+    <h1>OTHER LINKS</h1>
   </div>
-  
+  <button id="sheriffbutton" class="button sheriffbutt" target="_blank" >SHERIFFS DEPARTMENT</button>
+  <button id="citysopbutton" class="buttonb citybutt">LOS SANTOS POLICE</button>
+  <button id="firebutton" class="firebutt firebutton">FIRE AND EMS</button>
+  <button id="hwaysopbutton" class="hwaybutt hwaybutton">UNUSED DONT CLICK</button>
+  <!--
   <button id="penalbutton" class="penalbutt combutt" target="_blank" >Penal Codes</button>
   <button id="callsbutton" class="callbutt combutt" target="_blank" >Phonetics / 10 Codes</button>
   <button id="sensbutton" class="sensbutt scombutt" target="_blank" >UNUSED BUTTON</button>
@@ -257,11 +275,11 @@
 
 <script type="text/javascript">
     document.getElementById("sheriffbutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/sheriff/index.html";};
-    document.getElementById("citysopbutton").onclick = function () { location.href = "city/index.html";};
-    document.getElementById("hwaysopbutton").onclick = function () { location.href = "https://www.yahoo.com";};
-    document.getElementById("firebutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/fire/firesop.html";};
-    document.getElementById("penalbutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/penal.html";};
-    document.getElementById("callsbutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/callouts.html";};
+    document.getElementById("citysopbutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/city/index.html";};
+    document.getElementById("firebutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/fire/index.html";};
+    document.getElementById("hwaysopbutton").onclick = function () { location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";};
+    document.getElementById("penalbutton").onclick = function () { location.href = "other/penal.html";};
+    document.getElementById("callsbutton").onclick = function () { location.href = "other/callouts.html";};
     document.getElementById("livemapbutton").onclick = function () { location.href = "http://www.centralroleplaygaming.com/livemap/";};
     document.getElementById("sensbutton").onclick = function () { location.href = "https://www.youtube.com/watch?v=oHg5SJYRHA0&feature=youtu.be";};
 </script>
