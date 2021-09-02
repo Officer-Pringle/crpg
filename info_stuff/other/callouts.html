@@ -46,9 +46,37 @@
   top:13%;
   right: 5px;
 }
+.backbutt { /* Back button */
+  border: none;
+  color: white;
+  padding: 2px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  height:5vh;
+  width:12vw;
+  position: absolute;
+  top: 2vh;
+  left: 1vw;
+}
+.backbutt {
+  background-color: rgb(39, 39, 39); 
+  color: rgb(255, 255, 255); 
+  border: 2px solid grey;
+}
+
+.backbutt:hover {
+  background-color: rgb(0, 153, 255);
+  color: Black;
+}
 </style>
 </head>
 <body style="background-color: rgb(102, 0 ,51);">
+  <button id="return" class="backbutt backbutt">GO BACK</button>
 <div class="right">
   <h1>CRPG 10 Codes</h1>
 </div>
@@ -65,6 +93,9 @@
    <img class=theimg src="http://www.centralroleplaygaming.com/assets/phonetic_alphabet.jpg">
 
 </div>
+<script type="text/javascript">
+  document.getElementById("return").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/index.html";};
+</script>
 </body>
 
 </html>

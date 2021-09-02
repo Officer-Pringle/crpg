@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html>
+<style>
+.backbutt { /* Back button */
+  border: none;
+  color: white;
+  padding: 2px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  height:3.5vh;
+  width:12vw;
+  position: absolute;
+  top: 0.9vh;
+  left: 1vw;
+}
+.backbutt {
+  background-color: rgb(212, 0, 255); 
+  color: rgb(0, 0, 0); 
+  border: 2px solid grey;
+}
+
+.backbutt:hover {
+  background-color: rgb(0, 153, 255);
+  color: Black;
+}
+</style>
 
 <body style="background-color:powderblue;">
-  
+  <button id="return" class="backbutt backbutt">GO BACK</button>
+
   <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSrMXa65z16SYaU2Jym_pGkknow1XHtdCqyVhQlZEmHpV8ksKqwIUFnb8cQ_BR9CiccS9B6idhYyRxl/pubhtml?widget=true&amp;headers=false"
   style="height:96vh;width:98vw;" ></iframe>
-  
+  <script type="text/javascript">
+    document.getElementById("return").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/index.html";};
+  </script>
 </body>
 
 </html>
