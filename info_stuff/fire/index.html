@@ -61,6 +61,40 @@
   top: 35vh;
   left: 25%;
 }
+.emssopbutt { /* Sheriff Roster */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  height:8vh;
+  width:50vw;
+  position: absolute;
+  top: 50vh;
+  left: 25%;
+}
+.emssopbutt2 { /* Sheriff Roster */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  height:8vh;
+  width:50vw;
+  position: absolute;
+  top: 65vh;
+  left:25%;
+}
 .backbutt { /* Back button */
   border: none;
   color: white;
@@ -88,8 +122,8 @@
 }
 
 .depbutt:hover {
-  background-color: rgb(150, 8, 8);
-  color: rgb(229, 255, 0);
+  background-color: rgb(53, 53, 53);
+  color: rgb(255, 0, 0); 
 }
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -104,6 +138,16 @@
   color: Black;
 }
 
+.emsbutt {
+  background-color: rgba(22, 22, 22, 0.8); 
+  color: rgb(69, 123, 238); 
+  border: 2px solid grey;
+}
+
+.emsbutt:hover {
+  background-color: rgb(53, 53, 53);
+  color: rgb(69, 123, 238);
+}
 
 /* ----------------------- BACKGROUND ASSETS ------------------------------------------*/
 .backgroundimg {
@@ -155,8 +199,10 @@
   <div class="Headertext" ; text-decoration-color: white;>
     <h1>FIRE/EMS DOCUMENTS</h1>
   </div>
-  <button id="SSOP" class="button depbutt" target="_blank" >STANDARD OPERATING PROCEDURES</button>
+  <button id="SSOP" class="button depbutt" target="_blank" >FIRE STANDARD OPERATING PROCEDURES</button>
   <button id="roster" class="buttonb depbutt">ROSTER</button>
+  <button id="emssop" class="emssopbutt emsbutt">MEDICAL STANDARD OPERATING PROCEDURES</button>
+  <button id="emsinfo" class="emssopbutt2 emsbutt">MEDICAL INFORMATION</button>
   <button id="return" class="backbutt backbutt">Go Back</button>
   <!--<button id="firesopbutton" class="firebutt depbutt">Fire/EMS SOP</button>-->
   
@@ -164,6 +210,8 @@
 <script type="text/javascript">
     document.getElementById("SSOP").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/fire/firesop.html";};
     document.getElementById("roster").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/fire/fireroster.html";};
+    document.getElementById("emssop").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/fire/emssop.html";};
+    document.getElementById("emsinfo").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/fire/emsinfo.html";};
     document.getElementById("return").onclick = function () { location.href = "http://www.centralroleplaygaming.com/info_stuff/index.html";};
 </script>
 
